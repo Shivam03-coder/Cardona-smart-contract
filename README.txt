@@ -1,28 +1,38 @@
-REMIX DEFAULT WORKSPACE
+# CARDONA - Decentralized Crowdfunding dApp
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+## Overview
 
-This workspace contains 3 directories:
+**CARDONA** is a decentralized crowdfunding platform that leverages blockchain technology to provide a transparent, secure, and efficient way for project creators to raise funds. Built on the **Polygon Cardano Testnet**, this dApp enables users to create and fund projects using cryptocurrencies.
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+## Tech Stack
 
-SCRIPTS
+- **Smart Contracts**: Developed using **Solidity**
+- **Blockchain**: Deployed on **Polygon Cardano Testnet**
+- **Frontend**: Built with **Next.js** and **ShadCN UI**
+- **State Management**: Powered by **Redux Toolkit**
+- **Testing & Deployment**: Managed with **Hardhat**
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+## Features
 
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+- Create crowdfunding campaigns
+- Back projects using cryptocurrencies
+- Secure and transparent smart contract interactions
+- Real-time project tracking and funding status
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+## Getting Started
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+### Prerequisites
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+To run the project locally, you'll need the following:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Hardhat](https://hardhat.org/getting-started/#installation) (for compiling and deploying smart contracts)
+- [MetaMask](https://metamask.io/download.html) (for interacting with the blockchain)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/cardona-crowdfunding-dapp.git
+   cd cardona-crowdfunding-dapp
