@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "requiredAmount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "campaignAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "Imageurl",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "Storyurl",
+						"type": "string"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "timestamps",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "categoryOfCampaign",
+						"type": "string"
+					}
+				],
+				"name": "campaignCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "campaignTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "requiredCampaignAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "ImageUrl",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cateogory",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "storyUrl",
+						"type": "string"
+					}
+				],
+				"name": "CreateCampaign",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "depolyedCapmaigns",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/campaign.sol": "CampaignsData"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/campaign.sol": {
+			"keccak256": "0x90013fe8045c6b76caf3004df0aaf44907165ba2c99eccfa798e71b63f6c7559",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49119c1afce87cb53a1c576be08b2ad89db932bf2c248a18c3079967b88f5aae",
+				"dweb:/ipfs/QmXVnJXmiairXzcE8ExVn2hhKuj1yrcrYGHkNF2qBVoLuP"
+			]
+		}
+	},
+	"version": 1
+}
